@@ -1,0 +1,32 @@
+.contentContainer{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+h1{
+    text-wrap: wrap;
+}
+
+.domainList{
+    min-height: 50vh;
+    background-color: var(--color-bg-secondary);
+    margin-top: 10%;
+    width: 100%;
+    border-radius: 12.5px;
+    max-width: 500px;
+    box-sizing: border-box;
+    padding: 0.3rem;
+    font-size: clamp(10px, 5vw, 20px);
+}
+
+@media(max-width: 150px){
+    .domainList{
+        width: 100vw !important;
+        font-size: clamp(5px, 7vw, 100px);
+    }
+}

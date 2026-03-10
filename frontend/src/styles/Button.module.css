@@ -1,0 +1,43 @@
+.Button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0.4rem 5px;
+  border-radius: 12.5px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 50px #0000;
+}
+
+@media(max-width: 530px){
+  .Button{
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 375px){
+  .Button{
+    box-sizing: border-box;
+    font-size: clamp(10px, 2vw, 15px);
+  }
+}
+
+@media(max-width: 290px){
+  .Button{
+    box-sizing: border-box;
+    font-size: clamp(8px, 3.5vw, 12px);
+  }
+}
+
+html[data-theme="dark"] .Button:hover {
+  box-shadow: 0px 0px 50px var(--color-neon-20);
+}
+
+html[data-theme="dark"] .Button {
+  color: var(--white);
+}

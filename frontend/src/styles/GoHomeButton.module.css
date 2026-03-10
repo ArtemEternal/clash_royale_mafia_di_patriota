@@ -1,0 +1,84 @@
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0.6rem 3rem;
+  border-radius: 12.5px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 50px #0000;
+  margin: 30px 35% 30px 35%;
+  text-wrap: nowrap;
+  font-size: 15px;
+  max-width: 30vw;
+  z-index: 999;
+}
+
+.Button:has(img){
+  width: 45px;
+  box-sizing: border-box;
+  padding: 3px;
+  border-radius: 12.5px;
+  margin: 0;
+  height: clamp(20px, 10vw, 50px);
+  width: clamp(20px, 10vw, 50px);
+  object-fit: contain;
+}
+
+.Button img{
+  width: 5px;
+  height: 5px;
+}
+
+
+@media(max-width: 530px){
+  .Button{
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 375px){
+  .Button{
+    font-size: clamp(10px, 2vw, 15px);
+  }
+}
+
+@media(max-width: 290px){
+  .Button{
+    font-size: clamp(8px, 3.5vw, 12px);
+    margin: 30px auto 30px auto;
+  }
+}
+
+@media(max-width: 140px){
+  .Button:has(img){
+    
+    height: clamp(15px, 10vw, 45px);
+    width: clamp(15px, 10vw, 45px);
+  }
+}
+
+@media(max-width: 100px){
+  .Button{
+    padding: 0.7rem 1.5rem;
+    font-size: clamp(8px, 3vw, 10px);
+  }
+}
+
+@media(max-width: 70px){
+  .Button{
+    padding: 0.7rem 1.2rem;
+    font-size: clamp(5px, 3vw, 10px);
+  }
+}
+
+html[data-theme="dark"] .Button:hover {
+  box-shadow: 0px 0px 50px var(--color-neon-20);
+}
+
+html[data-theme="dark"] .Button {
+  color: var(--white);
+}

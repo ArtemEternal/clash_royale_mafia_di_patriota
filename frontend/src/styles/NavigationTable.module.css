@@ -1,0 +1,38 @@
+.tableContainer{
+    background-color: var(--color-bg-secondary);
+    min-height: 40vh;
+    position: absolute;
+    border: 1px solid var(--color-accent-10);
+    border-radius: 12.5px;
+    box-sizing: border-box;
+    padding: 2rem 5rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h5,
+h6{
+    font-weight: 400;
+    color: var(--color-text-secondary);
+}
+
+@media(max-width: 530px){
+    .tableContainer{
+        margin: 0.5rem;
+        padding: 2rem 2rem;
+    }
+}
+
+@media(max-width: 375px){
+    h1{
+        font-size: 9vw;
+        text-wrap: nowrap;
+    }
+    h5{
+        font-size: 3.3vw;
+    }
+}

@@ -1,0 +1,28 @@
+.ThemeSwitcherContainer{
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    user-select: none;
+}
+
+@media(hover: hover) and (pointer: fine) {
+.ThemeSwitcherContainer:hover{
+    background: var(--color-neon-20);
+}
+}
+
+@media(max-width: 540px){
+    .ThemeSwitcherContainer{
+        right: 1.5rem;
+    }
+}
+
+@media(max-width: 375px){
+    .ThemeSwitcherContainer{
+        right: 0.5rem;
+    }
+}

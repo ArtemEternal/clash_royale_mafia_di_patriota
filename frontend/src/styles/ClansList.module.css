@@ -1,0 +1,124 @@
+.contentContainer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.clanSpan{
+    background-color: var( --color-bg-secondary);
+    max-width: 100vw;
+    min-width: 60vw;
+    width: 80vw;
+    border-radius: 12.5px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    transition: background 0.25s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+.clanSpan:hover{
+    background: var(--color-bg-tertiary);
+}
+.linkToRoyaleApi a:hover,
+.linkToRoyaleApi a:focus-visible {
+  color: var(--white);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+
+  box-shadow:
+    0 0 8px var(--color-neon-50),
+    0 0 16px var(--color-neon-20);
+}
+}
+
+
+
+.clanInfo{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.clanTag{
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+
+.linkToRoyaleApi a {
+  position: relative;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+
+  color: var(--color-accent);
+  text-decoration: none;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  background: transparent;
+  border: 1px solid var(--color-accent-50);
+
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+@media(max-width: 550px){
+    .clanSpan{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .contentContainer{
+        padding: 0.2rem;
+    }
+}
+
+@media(max-width: 430px){
+    h4 {
+       font-size: clamp(8px, 5vw, 15px); 
+    }
+}
+
+@media(max-width: 390px){
+    .clanInfo{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 260px){
+    .linkToRoyaleApi a{
+        font-size: clamp(3px, 5vw, 15px);
+    }
+    .clanSpan{
+        min-width: 50px;
+        max-width: 200px;
+        width: 90vw;
+        padding: 0.5rem;
+    }
+}
+
+
+@media(max-width: 100px){
+    .clanSpan{
+        width: 100vw;
+    }
+    .clanName{
+        font-size: clamp(6.5px, 5vw, 15px);
+    }
+    .clanTag{
+        font-size: clamp(6px, 5vw, 15px);
+    }
+}

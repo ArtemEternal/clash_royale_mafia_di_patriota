@@ -1,0 +1,47 @@
+import styles from "../styles/RulesPage.module.css";
+import bg_desktop from "../../public/test_bg.jpg";
+import bg_mobile from "../../public/corleone_verticalbg.jpg";
+import { RULES } from "./pisanina/textRules.jsx";
+import { canvasLightning } from "../canvas.js";
+import { useEffect, useRef } from "react";
+import GoHomeButton from "./GoHomeButton.jsx";
+
+export default function RulesPage(){
+
+const canvasRef = useRef(null);
+
+useEffect(()=>{
+    const canvas = canvasRef.current;
+    if(canvas){
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const cl = new canvasLightning(canvas, window.innerWidth, window.innerHeight);
+        cl.init();
+    }else{
+        console.log("Canvas not found, ref is null");
+    }
+},[]);
+
+    return<>
+        <div className={styles.contentContainer}>
+            <picture>
+                <source 
+                    srcSet={bg_desktop}
+                    media="(orientation: landscape)"
+                />
+                <source 
+                    srcSet={bg_mobile}
+                    media="(orientation: portrait)"
+                />
+                <img src={bg_mobile}/>
+            </picture>
+            <canvas ref={canvasRef} className={styles.canvas}/>
+            <div className={styles.textContainer}>
+                {RULES}
+                <div className={styles.back}>
+                    <GoHomeButton content={"На главную"}/>
+                </div>
+            </div>
+        </div>
+    </>
+};

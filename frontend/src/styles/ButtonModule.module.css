@@ -1,0 +1,29 @@
+.contentContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12.5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.contentContainer a{
+    flex: 1 1 140px;
+}
+
+@media(max-width: 375px){
+    .contentContainer a{
+        flex: 1 1 100px;
+    }
+}
+
+@media(max-width: 290px){
+    .contentContainer a{
+        flex: 1 1 75px;
+    }
+    h6{
+        font-size: 8px;
+    }
+}
