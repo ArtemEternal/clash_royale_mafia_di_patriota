@@ -5,7 +5,6 @@ yarn-error.log
 
 
 # Сборка и бинарники
-dist/
 build/
 .next/ # Для Next.js
 out/
@@ -50,7 +49,6 @@ Thumbs.db # Для Windows
 
 # Дополнительно (для фронта)
 public/build/
-public/dist/
 *.map # Source maps, если не нужны
 
 # Локальные базы данных (если есть)
