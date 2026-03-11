@@ -55,6 +55,7 @@ public/build/
 *.db
 
 *.mp4
+*.png
 *.mov
 *.avi
 *.webm
