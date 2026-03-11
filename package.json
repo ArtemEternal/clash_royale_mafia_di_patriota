@@ -4,6 +4,6 @@
   "workspaces": ["frontend", "back"],
   "scripts": {
     "build": "yarn build --workspace=frontend", 
-    "start": "yarn start --workspace=back"
+    "start": "yarn run --workspace=back"
   }
 }
