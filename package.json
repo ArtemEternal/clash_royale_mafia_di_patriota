@@ -3,6 +3,7 @@
   "private": true,
   "workspaces": ["frontend", "back"],
   "scripts": {
-    "build": "yarn build --workspace=frontend"
+    "build": "yarn build --workspace=frontend", 
+    "start": "node index.js"
   }
 }
