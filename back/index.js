@@ -39,15 +39,19 @@ console.log(data)
 const _dirnameFull = path.resolve();
 console.log("dirname full:", __dirname);
 //const clientPath = path.join(_dirnameFull, '../frontend', 'dist');
-const clientPath = path.resolve(__dirname, '../frontend/dist');
+const clientPath = path.join(process.cwd(), 'frontend/dist');
 
 
 app.use(express.json());
 app.use(express.static(clientPath));
 
 
-app.use((req, res) => {
+/*app.use((req, res) => {
   res.sendFile(path.join(clientPath, 'index.html'));
+});*/
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(clientPath, "index.html"));
 });
 
 //module.exports = app;
