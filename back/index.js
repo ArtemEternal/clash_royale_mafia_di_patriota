@@ -37,6 +37,7 @@ console.log(data)
 
 
 const _dirnameFull = path.resolve();
+console.log("dirname full:", _dirnameFull);
 //const clientPath = path.join(_dirnameFull, '../frontend', 'dist');
 const clientPath = path.resolve(_dirnameFull, '../frontend/dist');
 
