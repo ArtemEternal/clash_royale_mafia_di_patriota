@@ -1,0 +1,8 @@
+{
+  "name": "my-workspaces-powered-project",
+  "private": true,
+  "workspaces": ["frontend", "back"],
+  "scripts": {
+    "build": "npm run build --workspace=frontend"
+  }
+}
