@@ -2,7 +2,7 @@
   "name": "clash-royale-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "yarn --cwd frontend install --frozen-lockfile && yarn --cwd frontend build",
+    "build": "npm install --prefix frontend && yarn build --prefix frontend",
     "start": "node backend/index.js"
   },
   "engines": {
