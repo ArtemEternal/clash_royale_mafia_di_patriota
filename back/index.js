@@ -37,8 +37,7 @@ console.log(data)
 
 
 const _dirnameFull = path.resolve();
-console.log("dirname full:", __dirname);
-const clientPath = path.join(_dirnameFull, '../frontend', 'dist');
+const clientPath = path.join(_dirnameFull, '/frontend', 'dist');
 
 
 app.use(express.json());
