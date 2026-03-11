@@ -11,12 +11,12 @@ const clans = [
 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 const TOKEN = process.env.TOKEN;
 
 app.use(
   cors({
-    origin: "https://mafiabsnss.vercel.app",
+    origin: "https://clashroyalemafiadipatriota-production.up.railway.app",
     credentials: true
   })
 );
@@ -37,7 +37,9 @@ console.log(data)
 
 
 const _dirnameFull = path.resolve();
-const clientPath = path.join(_dirnameFull, '../frontend', 'dist');
+//const clientPath = path.join(_dirnameFull, '../frontend', 'dist');
+const clientPath = path.resolve(_dirnameFull, '../frontend/dist');
+
 
 app.use(express.json());
 app.use(express.static(clientPath));
