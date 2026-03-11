@@ -2,10 +2,6 @@
   "name": "back",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "build": "/front && yarn add && yarn build",
-    "start": "node index.js"
- },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.6",
