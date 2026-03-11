@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "cd front && yarn install && yarn build",
    "start": "node back/index.js"
  },
   "license": "MIT",
