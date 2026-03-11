@@ -50,7 +50,7 @@ app.use(express.static(clientPath));
   res.sendFile(path.join(clientPath, 'index.html'));
 });*/
 
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
   res.sendFile(path.join(clientPath, "index.html"));
 });
 
