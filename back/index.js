@@ -47,6 +47,7 @@ app.use((req, res) => {
   res.sendFile(path.join(clientPath, 'index.html'));
 });
 
+//module.exports = app;
 
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`)
