@@ -9,6 +9,7 @@
     "express": "^5.2.1"
   },
  "scripts": {
+   "build": "echo 'No build needed for backend'",
    "start": "node index.js"
  }
 }
