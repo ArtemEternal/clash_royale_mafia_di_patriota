@@ -1,5 +1,5 @@
 {
-  "name": "mafia_royale_project",
+  "name": "project",
   "private": true,
   "workspaces": ["frontend", "back"],
   "scripts": {
