@@ -3,6 +3,7 @@
   "private": true,
   "workspaces": ["frontend", "back"],
   "scripts": {
-    "build": "npm run build --workspace=frontend"
+    "build": "yarn workspace frontend build",
+    "start": "yarn workspace back start"
   }
 }
