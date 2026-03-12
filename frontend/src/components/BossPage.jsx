@@ -40,7 +40,7 @@ export default function BossPage(){
                 muted={false}
                 className={styles.videoBg}
             >
-                <source src={CorleoneBg2} type='video/mp4'/>
+                <source src={CorleoneBg2}/>
             </video>
             <video
                 autoPlay
@@ -49,7 +49,7 @@ export default function BossPage(){
                 muted
                 className={styles.videoBg2}
             >
-                <source src={CorleoneBg2} type='video/mp4'/>
+                <source src={CorleoneBg2}/>
             </video>
             {/*<canvas ref={canvasRef} className={styles.canvas}/>*/}
         </div>
