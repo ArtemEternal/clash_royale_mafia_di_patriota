@@ -1,7 +1,7 @@
 import styles from "../styles/BossPage.module.css";
 //import CorleoneBg from "../../public/Corleone.mp4";
 //import CorleoneBg2 from "@/assets/background";
-import CorleoneBg2 from "../../public/background.mp4";
+import CorleoneBg2 from "@/assets/background.mp4";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
 //import tg from "@/assets/telegram";
