@@ -5,5 +5,12 @@
   "scripts": {
     "build": "yarn workspace frontend build",
     "start": "yarn workspace back start"
+  },
+  "compilerOptions": {
+    "path": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   }
 }

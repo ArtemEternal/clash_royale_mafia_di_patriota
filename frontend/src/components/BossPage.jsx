@@ -1,11 +1,11 @@
 import styles from "../styles/BossPage.module.css";
 //import CorleoneBg from "../../public/Corleone.mp4";
-import CorleoneBg2 from "src/assets/CorleoneSecond.mp4";
+import CorleoneBg2 from "@/assets/CorleoneSecond.mp4";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
-import tg from "src/assets/telegram.png";
-import gm from "src/assets/gmail.png";
-import home from "src/assets/home.png";
+import tg from "@/assets/telegram.png";
+import gm from "@/assets/gmail.png";
+import home from "@/assets/home.png";
 import GoHomeButton from "./GoHomeButton.jsx";
 
 export default function BossPage(){
