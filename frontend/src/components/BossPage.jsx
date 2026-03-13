@@ -1,12 +1,12 @@
 import styles from "../styles/BossPage.module.css";
 //import CorleoneBg from "../../public/Corleone.mp4";
-//import CorleoneBg2 from "@/assets/background";
+import CorleoneBg2 from "../../public/CorleoneSecond.mp4";
 import bg_desktop from "../../public/test_bg.jpg";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
-//import tg from "@/assets/telegram";
-//import gm from "@/assets/gmail";
-//import home from "@/assets/home";
+import tg from "../../public/telegram.png";
+import gm from "../../public/gmail.png";
+import home from "../../public/home.png";
 import GoHomeButton from "./GoHomeButton.jsx";
 
 export default function BossPage(){
@@ -41,7 +41,7 @@ export default function BossPage(){
                 muted={false}
                 className={styles.videoBg}
             >
-                <source srcSet="../../public/Corleone.mp4" type="video/mp4"/>
+                <source srcSet={CorleoneBg2} type="video/mp4"/>
             </video>
             <video
                 autoPlay
@@ -50,7 +50,7 @@ export default function BossPage(){
                 muted
                 className={styles.videoBg2}
             >
-                <source srcSet="../../public/Corleone.mp4" type="video/mp4"/>
+                <source srcSet={CorleoneBg2} type="video/mp4"/>
             </video>
             {/*<canvas ref={canvasRef} className={styles.canvas}/>*/}
         </div>
@@ -62,17 +62,17 @@ export default function BossPage(){
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="@/assets/telegram.png" alt="Telegram"/>
+                    <img srcSet={tg} alt="Telegram"/>
                 </a>
                 <div className={styles.goHomeButton}>
-                    <GoHomeButton content={<img  src="@/assets/home.png" alt="Home"/>}/>
+                    <GoHomeButton content={<img  srcSet={home} alt="Home"/>}/>
                 </div>
                 <a
                     href="https://mail.google.com/mail/?view=cm&to=artem22october@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="../assets/gmail.png" alt="Gmail"/>
+                    <img srcSet={gm} alt="Gmail"/>
                 </a>
             </div>
         </div>
