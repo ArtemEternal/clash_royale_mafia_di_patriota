@@ -36,7 +36,7 @@ export default function AdminsPage(){
             {members.map(member => (
                 <div className={styles.memberCard} key={member.nickname}>
                     <div className={styles.memberPhotoContainer}>
-                        <img src={member.photo}/>
+                        <img srcSet={member.photo}/>
                     </div>
                     <div className={styles.memberAboutContainer}>
                         <h4>{member.nickname}</h4>
