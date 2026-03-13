@@ -16,7 +16,7 @@ const members = [
     {nickname: "Podsosensky", role: "Легенда", tg: "", photo: "../../public/hog.jpg"},
     {nickname: "Стумадеутумадей", role: "Легенда", tg: "", photo: "../../public/lumberjack.jpg"},
     {nickname: "Jug Toxic", role: "Герой моржка", tg: "", photo: "../../public/bowler.jpg"},
-    {nickname: "MaKsOn", role: "Геморой моржка", tg: "", photo: "@/assets/miner.jpg"},  
+    {nickname: "MaKsOn", role: "Геморой моржка", tg: "", photo: "../assets/miner.jpg"},  
     {nickname: "JUGGER", role: "Солдат", tg: "Секретно", photo: "../../public/jugger.jpg"}, 
     {nickname: "JUG ALFA MASTURBIST", role: "Солдат", tg: "", photo: "../../public/monk.jpg"},
     {nickname: "FL Artik-Ais", role: "Солдат", tg: "", photo: "../../public/goblin.jpg"}, 
