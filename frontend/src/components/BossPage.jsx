@@ -8,6 +8,7 @@ import tg from "../../public/telegram.png";
 import gm from "../../public/gmail.png";
 import home from "../../public/home.png";
 import GoHomeButton from "./GoHomeButton.jsx";
+const hui = 0;
 
 export default function BossPage(){
 
