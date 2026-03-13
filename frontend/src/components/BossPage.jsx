@@ -1,14 +1,13 @@
 import styles from "../styles/BossPage.module.css";
 //import CorleoneBg from "../../public/Corleone.mp4";
+import tg from "../../public/telegram.png";
 import CorleoneBg2 from "../../public/CorleoneSecond.mp4";
 import bg_desktop from "../../public/test_bg.jpg";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
-import tg from "../../public/telegram.png";
 import gm from "../../public/gmail.png";
 import home from "../../public/home.png";
 import GoHomeButton from "./GoHomeButton.jsx";
-const hui = 0;
 
 export default function BossPage(){
 
