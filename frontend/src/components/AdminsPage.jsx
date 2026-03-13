@@ -1,6 +1,6 @@
 import styles from "../styles/AdminsPage.module.css";
 import GoBackButton from "./GoHomeButton.jsx";
-import hui from "../../public/chicken.jpg";
+import hui from "../../public/test_bg.jpg";
 
 const members = [
     {nickname: "Михал Палыч", role: "Дон Vertical ll", tg: "Секретно", photo: "../../public/mihalpalich.png"},
