@@ -3,9 +3,9 @@ import styles from "../styles/BossPage.module.css";
 import CorleoneBg2 from "@/assets/background";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
-import tg from "@/assets/telegram.png";
-import gm from "@/assets/gmail.png";
-import home from "@/assets/home.png";
+import tg from "@/assets/telegram";
+import gm from "@/assets/gmail";
+import home from "@/assets/home";
 import GoHomeButton from "./GoHomeButton.jsx";
 
 export default function BossPage(){
