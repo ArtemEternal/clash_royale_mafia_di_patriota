@@ -3,9 +3,9 @@ import styles from "../styles/BossPage.module.css";
 //import CorleoneBg2 from "@/assets/background";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
-import tg from "@/assets/telegram";
-import gm from "@/assets/gmail";
-import home from "@/assets/home";
+//import tg from "@/assets/telegram";
+//import gm from "@/assets/gmail";
+//import home from "@/assets/home";
 import GoHomeButton from "./GoHomeButton.jsx";
 
 export default function BossPage(){
@@ -61,17 +61,17 @@ export default function BossPage(){
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src={tg} alt="Telegram"/>
+                    <img src="@/assets/telegram" alt="Telegram"/>
                 </a>
                 <div className={styles.goHomeButton}>
-                    <GoHomeButton content={<img  src={home} alt="Home"/>}/>
+                    <GoHomeButton content={<img  src="@/assets/home" alt="Home"/>}/>
                 </div>
                 <a
                     href="https://mail.google.com/mail/?view=cm&to=artem22october@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src={gm} alt="Gmail"/>
+                    <img src="@/assets/gmail" alt="Gmail"/>
                 </a>
             </div>
         </div>
