@@ -1,7 +1,7 @@
 import styles from "../styles/BossPage.module.css";
 //import CorleoneBg from "../../public/Corleone.mp4";
 import tg from "../../public/telegram.png";
-import CorleoneBg2 from "../../public/CorleoneSecond.mp4";
+//import CorleoneBg2 from "../../public/CorleoneSecond.mp4";
 import bg_desktop from "../../public/test_bg.jpg";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
@@ -41,7 +41,7 @@ export default function BossPage(){
                 muted={false}
                 className={styles.videoBg}
             >
-                <source srcSet={CorleoneBg2} type="video/mp4"/>
+                <source srcSet="../../public/CorleoneSecond.mp4" type="video/mp4"/>
             </video>
             <video
                 autoPlay
@@ -50,7 +50,7 @@ export default function BossPage(){
                 muted
                 className={styles.videoBg2}
             >
-                <source srcSet={CorleoneBg2} type="video/mp4"/>
+                <source srcSet="../../public/CorleoneSecond.mp4" type="video/mp4"/>
             </video>
             {/*<canvas ref={canvasRef} className={styles.canvas}/>*/}
         </div>
