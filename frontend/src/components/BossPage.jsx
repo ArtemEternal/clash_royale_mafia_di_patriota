@@ -71,7 +71,7 @@ export default function BossPage(){
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="@/assets/gmail.png" alt="Gmail"/>
+                    <img src="../../public/gmail.png" alt="Gmail"/>
                 </a>
             </div>
         </div>
