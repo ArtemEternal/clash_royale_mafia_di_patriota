@@ -1,6 +1,6 @@
 import styles from "../styles/AdminsPage.module.css";
 import GoBackButton from "./GoHomeButton.jsx";
-import hui from "/bowler.jpg";
+import hui from "@/bowler.jpg";
 //import hui from "../../public/test_bg.jpg";
 
 const members = [
