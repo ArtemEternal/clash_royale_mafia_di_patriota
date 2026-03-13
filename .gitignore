@@ -54,10 +54,3 @@ public/build/
 *.sqlite
 *.db
 
-*.mp4
-*.png
-*.mov
-*.avi
-*.webm
-#test
-*.jpg
