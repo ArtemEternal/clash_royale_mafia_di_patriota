@@ -40,7 +40,7 @@ export default function BossPage(){
                 muted={false}
                 className={styles.videoBg}
             >
-                <source src="@/assets/background" type="video/mp4"/>
+                <source src="@/assets/background.mp4" type="video/mp4"/>
             </video>
             <video
                 autoPlay
@@ -49,7 +49,7 @@ export default function BossPage(){
                 muted
                 className={styles.videoBg2}
             >
-                <source src="@/assets/background" type="video/mp4"/>
+                <source src="@/assets/background.mp4" type="video/mp4"/>
             </video>
             {/*<canvas ref={canvasRef} className={styles.canvas}/>*/}
         </div>
@@ -61,17 +61,17 @@ export default function BossPage(){
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="@/assets/telegram" alt="Telegram"/>
+                    <img src="@/assets/telegram.png" alt="Telegram"/>
                 </a>
                 <div className={styles.goHomeButton}>
-                    <GoHomeButton content={<img  src="@/assets/home" alt="Home"/>}/>
+                    <GoHomeButton content={<img  src="@/assets/home.png" alt="Home"/>}/>
                 </div>
                 <a
                     href="https://mail.google.com/mail/?view=cm&to=artem22october@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="@/assets/gmail" alt="Gmail"/>
+                    <img src="@/assets/gmail.png" alt="Gmail"/>
                 </a>
             </div>
         </div>
