@@ -17,6 +17,14 @@
   text-align: center;
   width: 100%;
   overflow-y: none;
+  -webkit-text-stroke: 2px var(--color-neon-70);
+}
+
+.videoContainer{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  inset: 0;
 }
 
 .videoBg2{
@@ -101,5 +109,11 @@ h1{
 @media(max-width: 500px){
   .contentContainer{
     text-align: start;
+  }
+}
+
+@media(max-width: 350px){
+  .contentContainer{
+      -webkit-text-stroke: 1px var(--color-neon-70);
   }
 }

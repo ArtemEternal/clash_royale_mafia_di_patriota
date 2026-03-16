@@ -1,6 +1,5 @@
 import styles from "../styles/AdminsPage.module.css";
 import GoBackButton from "./GoHomeButton.jsx";
-import hui from "../../public/miner.jpg";
 
 const members = [
     {nickname: "Михал Палыч", role: "Дон Vertical ll", tg: "Секретно", photo: "../../public/mihalpalich.png"},
@@ -37,8 +36,7 @@ export default function AdminsPage(){
             {members.map(member => (
                 <div className={styles.memberCard} key={member.nickname}>
                     <div className={styles.memberPhotoContainer}>
-                        {/*<img srcSet={member.photo}/>*/}
-                        <img srcSet={hui}/>
+                        <img src={member.photo}/>
                     </div>
                     <div className={styles.memberAboutContainer}>
                         <h4>{member.nickname}</h4>
