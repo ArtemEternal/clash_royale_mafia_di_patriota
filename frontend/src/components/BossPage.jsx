@@ -40,7 +40,7 @@ export default function BossPage(){
                 muted={false}
                 className={styles.videoBg}
             >
-                <source src="/Godfather2.mp4"/>
+                <source src="../assets/Godfather2.mp4"/>
             </video>
             <video
                 autoPlay
@@ -49,7 +49,7 @@ export default function BossPage(){
                 muted
                 className={styles.videoBg2}
             >
-                <source src="/Godfather2.mp4"/>
+                <source src="../assets/Godfather2.mp4"/>
             </video>
             {/*<canvas ref={canvasRef} className={styles.canvas}/>*/}
         </div>
