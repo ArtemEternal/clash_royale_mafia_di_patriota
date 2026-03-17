@@ -1,5 +1,4 @@
 import styles from "../styles/BossPage.module.css";
-import CorleoneBg from "../../public/Corleone.mp4";
 import tg from "../../public/telegram.png";
 import CorleoneBg from "/boss_background.mp4";
 import bg_desktop from "../../public/test_bg.jpg";
