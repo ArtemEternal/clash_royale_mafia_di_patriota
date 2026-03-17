@@ -11,7 +11,7 @@ const members = [
     {nickname: "SK-13 | STALIN", role: "Консильери", tg: "Секретно", photo: "../../public/stalin.jpg"},
     {nickname: "Nesquii", role: "Капо", tg: "Секретно", photo: "../../public/robber.jpg"}, 
     {nickname: "Бродяга", role: "Капо", tg: "Секретно", photo: "../../public/goldengiantskeleton.jpg"},  
-    {nickname: "Ff", role: "Капо", tg: "", photo: "../../public/wallpaper.jpg"},
+    {nickname: "Ff", role: "Капо", tg: "", photo: "/wallpaper.jpg"},
     {nickname: "Qrime", role: "Легенда", tg: "", photo: "../../public/maga.jpg"}, 
     {nickname: "Podsosensky", role: "Легенда", tg: "", photo: "../../public/hog.jpg"},
     {nickname: "Стумадеутумадей", role: "Легенда", tg: "", photo: "../../public/lumberjack.jpg"},
@@ -36,7 +36,7 @@ export default function AdminsPage(){
             {members.map(member => (
                 <div className={styles.memberCard} key={member.nickname}>
                     <div className={styles.memberPhotoContainer}>
-                        <img src={member.photo}/>
+                        <img srcSet={member.photo}/>
                     </div>
                     <div className={styles.memberAboutContainer}>
                         <h4>{member.nickname}</h4>
