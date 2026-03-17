@@ -10,5 +10,11 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     }
+  },
+  assetsInclude: ['**/*.mp4'], // Добавляем поддержку mp4 файлов
+  build: {
+    rollupOptions: {
+      external: [] // Убедись, что тут пусто
+    }
   }
 })
