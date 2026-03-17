@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./frontend"),
+      "@": path.resolve(__dirname, "./src"),
     }
   },
   assetsInclude: ['**/*.mp4'], // Добавляем поддержку mp4 файлов
