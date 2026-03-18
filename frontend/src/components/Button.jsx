@@ -3,14 +3,14 @@ import styles from "../styles/Button.module.css";
 export default function Button({
     children, 
     onClick, 
-    className, 
+    classNamee, 
     style
 }){
     return(
         <button 
             style={style}
             onClick={onClick}
-            className={[styles.Button, className].join("")}
+            className={[styles.Button, classNamee].join("")}
         >
             {children}
         </button>

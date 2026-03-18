@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage.jsx";
 import NotFound from "./components/NotFound.jsx";
 import FamigliaPage from "./components/FamiliagaPage.jsx";
-import BossPage from "./components/BossPage.jsx";
+import BossPage from "./components/BossModule.jsx";
 import AdminPage from "./components/AdminsPage.jsx";
 import RulesPage from "./components/RulesPage.jsx";
 import DomainPage from "./components/DomainPage.jsx";

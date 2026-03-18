@@ -8,13 +8,13 @@ import gm from "../../public/gmail.png";
 import home from "../../public/home.png";
 import GoHomeButton from "./GoHomeButton.jsx";
 
-export default function BossPage(){
+export default function BossPage({sound}){
 
     //const canvasRef = useRef(null);
 
     useEffect(() => {
         if(videoRef.current){
-            videoRef.current.volume = 0.007;
+            videoRef.current.volume = 0.1;
         };
     /*const canvas = canvasRef.current;
     if (canvas) {
@@ -37,7 +37,7 @@ export default function BossPage(){
                 autoPlay
                 loop
                 playsInline
-                muted={false}
+                muted={sound}
                 className={styles.videoBg}
             >
                 <source src={CorleoneBg}/>

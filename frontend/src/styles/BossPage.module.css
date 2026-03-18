@@ -1,6 +1,7 @@
 .contentContainer{
   position: fixed;
   display: flex;
+  background-color: none;
   justify-content: center;
   align-items: center;
   z-index: 4;
