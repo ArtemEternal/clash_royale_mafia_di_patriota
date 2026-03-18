@@ -3,8 +3,13 @@ import styles from "../styles/ClansList.module.css";
 
 export default function ClansList(){
 
-    const [dataClans, setDataClans] = useState([]);
+    const [dataClans, setDataClans] = useState([
+        {tag: "#YC08PPVC", name: "Vertical ll"}, 
+        {tag: "#Q8PGCRPV", name: "моржок соса"}, 
+    ]);
 
+    /* рабочий код, но railway не дал ip сервера, который необходим для api cr. поэтому хардкод
+    
     useEffect(()=>{
         fetch("http://localhost:5000/get_clans", {
             method: "GET",
@@ -13,7 +18,7 @@ export default function ClansList(){
         })
         .then((r) => r.json())
         .then((r) => {setDataClans(r)})
-    },[]);
+    },[]);*/
 
     return<>
         <div className={styles.contentContainer}>
