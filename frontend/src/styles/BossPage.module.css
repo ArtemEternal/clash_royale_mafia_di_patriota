@@ -28,7 +28,7 @@
 }
 
 .videoBg2{
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
   filter: brightness(10%) blur(3px);

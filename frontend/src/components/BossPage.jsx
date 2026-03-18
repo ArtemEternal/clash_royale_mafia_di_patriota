@@ -14,7 +14,7 @@ export default function BossPage(){
 
     useEffect(() => {
         if(videoRef.current){
-            videoRef.current.volume = 0.002;
+            videoRef.current.volume = 0.007;
         };
     /*const canvas = canvasRef.current;
     if (canvas) {
