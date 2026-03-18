@@ -34,7 +34,7 @@ export default function ThemeSwitcher(){
 
     return<>
         <div onClick={toggleTheme} className={styles.ThemeSwitcherContainer}>
-            {theme === "light" ?  "⏾" : "☀︎"}
+            {theme === "light" ?  "☾" : "☀︎"}
         </div>
     </>
 };
