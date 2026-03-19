@@ -1,7 +1,6 @@
 import styles from "../styles/BossPage.module.css";
 import tg from "../../public/telegram.png";
 import CorleoneBg from "@/assets/background.mp4";
-import bg_desktop from "../../public/test_bg.jpg";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
 import gm from "../../public/gmail.png";
