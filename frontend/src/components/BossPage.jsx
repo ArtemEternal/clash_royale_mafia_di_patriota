@@ -1,7 +1,7 @@
 import styles from "../styles/BossPage.module.css";
 //import tg from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/telegram.png";
-//import CorleoneBg from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/background.mp4";
-import { useEffect, useRef } from "react";
+import CorleoneBg from "@assets/background.mp4";
+import { useEffect, useRef, useState } from "react";
 import { canvasLightning } from "../canvas.js";
 //import gm from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/gmail.png";
 //import home from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/home.png";
@@ -10,11 +10,13 @@ import GoHomeButton from "./GoHomeButton.jsx";
 export default function BossPage({sound}){
 
     //const canvasRef = useRef(null);
+    const [visible, setVisible] = useState(false);
 
     useEffect(() => {
         if(videoRef.current){
             videoRef.current.volume = 0.1;
         };
+        setVisible(true);
     /*const canvas = canvasRef.current;
     if (canvas) {
       canvas.width = window.innerWidth;
@@ -30,7 +32,7 @@ export default function BossPage({sound}){
     const videoRef = useRef(null);
 
     return<>
-        <div className={styles.videoContainer}>
+        <div className={`${styles.videoContainer} ${visible ? styles.visible : ""}`}>
             <video
                 ref={videoRef}
                 autoPlay
@@ -39,7 +41,7 @@ export default function BossPage({sound}){
                 muted={sound}
                 className={styles.videoBg}
             >
-                <source src="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/background.mp4"/>
+                <source src={CorleoneBg}/>
             </video>
             <video
                 autoPlay
@@ -48,7 +50,7 @@ export default function BossPage({sound}){
                 muted
                 className={styles.videoBg2}
             >
-                <source src="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/background.mp4"/>
+                <source src={CorleoneBg}/>
             </video>
             {/*<canvas ref={canvasRef} className={styles.canvas}/>*/}
         </div>

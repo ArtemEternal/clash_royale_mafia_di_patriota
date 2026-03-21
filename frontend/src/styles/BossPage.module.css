@@ -28,7 +28,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity:  0;
+  transition: opacity 2s easy;
 }
+
+.videoContainer{
+  opacity: 1;
+}
+
 
 .videoBg2{
   position: absolute;
