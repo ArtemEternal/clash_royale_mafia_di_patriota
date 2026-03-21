@@ -1,10 +1,10 @@
 import styles from "../styles/BossPage.module.css";
-import tg from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/telegram.png";
-import CorleoneBg from "@/assets/background.mp4";
+//import tg from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/telegram.png";
+//import CorleoneBg from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/background.mp4";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
-import gm from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/gmail.png";
-import home from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/home.png";
+//import gm from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/gmail.png";
+//import home from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/home.png";
 import GoHomeButton from "./GoHomeButton.jsx";
 
 export default function BossPage({sound}){
@@ -39,7 +39,7 @@ export default function BossPage({sound}){
                 muted={sound}
                 className={styles.videoBg}
             >
-                <source src={CorleoneBg}/>
+                <source src="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/background.mp4"/>
             </video>
             <video
                 autoPlay
@@ -48,7 +48,7 @@ export default function BossPage({sound}){
                 muted
                 className={styles.videoBg2}
             >
-                <source src={CorleoneBg}/>
+                <source src="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/background.mp4"/>
             </video>
             {/*<canvas ref={canvasRef} className={styles.canvas}/>*/}
         </div>
@@ -60,17 +60,17 @@ export default function BossPage({sound}){
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img srcSet={tg} alt="Telegram"/>
+                    <img srcSet="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/telegram.png" alt="Telegram"/>
                 </a>
                 <div className={styles.goHomeButton}>
-                    <GoHomeButton content={<img  srcSet={home} alt="Home"/>}/>
+                    <GoHomeButton content={<img  srcSet="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/home.png" alt="Home"/>}/>
                 </div>
                 <a
                     href="https://mail.google.com/mail/?view=cm&to=artem22october@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img srcSet={gm} alt="Gmail"/>
+                    <img srcSet="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/gmail.png" alt="Gmail"/>
                 </a>
             </div>
         </div>

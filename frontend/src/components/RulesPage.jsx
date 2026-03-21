@@ -1,6 +1,6 @@
 import styles from "../styles/RulesPage.module.css";
-import bg_desktop from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/test_bg.webp";
-import bg_mobile from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/corleone_verticalbg.webp";
+//import bg_desktop from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/test_bg.webp";
+//import bg_mobile from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/corleone_verticalbg.webp";
 import { RULES } from "./pisanina/textRules.jsx";
 import { canvasLightning } from "../canvas.js";
 import { useEffect, useRef } from "react";
@@ -26,14 +26,14 @@ useEffect(()=>{
         <div className={styles.contentContainer}>
             <picture>
                 <source 
-                    srcSet={bg_desktop}
+                    srcSet="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/test_bg.webp"
                     media="(orientation: landscape)"
                 />
                 <source 
-                    srcSet={bg_mobile}
+                    srcSet="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/corleone_verticalbg.webp"
                     media="(orientation: portrait)"
                 />
-                <img src={bg_mobile}/>
+                <img src="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/corleone_verticalbg.webp"/>
             </picture>
             <canvas ref={canvasRef} className={styles.canvas}/>
             <div className={styles.textContainer}>
