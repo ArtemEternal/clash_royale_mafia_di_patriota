@@ -1,6 +1,6 @@
 import styles from "../styles/BossPage.module.css";
 //import tg from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/telegram.png";
-import CorleoneBg from "@assets/background.mp4";
+import CorleoneBg from "../../public/background.mp4";
 import { useEffect, useRef, useState } from "react";
 import { canvasLightning } from "../canvas.js";
 //import gm from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/gmail.png";
