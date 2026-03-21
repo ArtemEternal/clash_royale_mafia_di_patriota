@@ -1,6 +1,6 @@
 import styles from "../styles/RulesPage.module.css";
-import bg_desktop from "../../public/test_bg.webp";
-import bg_mobile from "../../public/corleone_verticalbg.webp";
+import bg_desktop from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/test_bg.webp";
+import bg_mobile from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/corleone_verticalbg.webp";
 import { RULES } from "./pisanina/textRules.jsx";
 import { canvasLightning } from "../canvas.js";
 import { useEffect, useRef } from "react";

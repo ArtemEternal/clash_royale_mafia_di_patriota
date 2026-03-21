@@ -1,10 +1,10 @@
 import styles from "../styles/BossPage.module.css";
-import tg from "../../public/telegram.png";
+import tg from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/telegram.png";
 import CorleoneBg from "@/assets/background.mp4";
 import { useEffect, useRef } from "react";
 import { canvasLightning } from "../canvas.js";
-import gm from "../../public/gmail.png";
-import home from "../../public/home.png";
+import gm from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/gmail.png";
+import home from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/home.png";
 import GoHomeButton from "./GoHomeButton.jsx";
 
 export default function BossPage({sound}){
