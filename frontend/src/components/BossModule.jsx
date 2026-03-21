@@ -2,6 +2,7 @@ import { use, useState } from "react";
 import styles from "../styles/BossModule.module.css";
 import BossPage from "./BossPage.jsx";
 import Button from "./Button.jsx";
+import GoHomeButton from "./GoHomeButton.jsx";
 
 export default function BossModule(){
 
@@ -25,6 +26,7 @@ export default function BossModule(){
             <div className={styles.contentContainer}>
                 <Button children={"Продолжить со звуком"} onClick={WithSound}/>
                 <Button children={"Продолжить без звука"} onClick={WithOutSound}/>
+                <GoHomeButton content={"На главную"}/>
             </div>}
     </>
 }

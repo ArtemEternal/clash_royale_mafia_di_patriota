@@ -1,9 +1,15 @@
 .contentContainer{
     width: 100vw;
     height: 100dvh;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     gap: 2rem;
+}
+
+.contentContainer:last-child{
+    grid-column: span 2;
+    justify-self: center;
 }

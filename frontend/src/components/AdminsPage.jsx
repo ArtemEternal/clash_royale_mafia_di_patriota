@@ -5,7 +5,7 @@ const members = [
     {nickname: "Михал Палыч", role: "Дон Vertical ll", tg: "Секретно", photo: "/mihalpalich.webp"},
     {nickname: "Пихал Малыч", role: "Дон моржка", tg: "Секретно", photo: "/pihalmalich.webp"},
     {nickname: "Патриот", role: "Синий король", tg: "Секретно", photo: "/patriot.webp"}, 
-    {nickname: "m3", role: "Подручный", tg: "Секретно", photo: "/m3.webp"}, 
+    {nickname: "m3", role: "Палач", tg: "Секретно", photo: "/m3.webp"}, 
     {nickname: "Aleksandr Morzhokko", role: "Основатель моржка", tg: "", photo: "/royal_giant.webp"}, 
     {nickname: "Amir Sosini", role: "Сооснователь моржка", tg: "", photo: "/giant.webp"},
     {nickname: "SK-13 | STALIN", role: "Консильери", tg: "Секретно", photo: "/stalin.webp"},
@@ -21,7 +21,7 @@ const members = [
     {nickname: "JUG ALFA MASTURBIST", role: "Солдат", tg: "", photo: "/monk.webp"},
     {nickname: "FL Artik-Ais", role: "Солдат", tg: "", photo: "/goblin.webp"}, 
     {nickname: "Jug People", role: "Солдат второй категории", tg: "", photo: "/people.webp"}, 
-    {nickname: "Jug Kasta", role: "Jug (samaya nizshaya) Kasta", tg: "", photo: "/chicken.webp"},
+    {nickname: "Jug Kasta", role: "Jug (samaya nizshaya) Kasta", tg: "", photo: "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/chicken.webp"},
 ];
 
 export default function AdminsPage(){
