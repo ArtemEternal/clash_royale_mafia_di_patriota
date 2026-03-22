@@ -78,7 +78,7 @@
   height: 100dvh;
   bottom: 10px;
   width: 100%;
-  bottom: 0;
+  bottom: 1rem;
   display: flex;
   flex-direction: row; 
   align-items: flex-end;
