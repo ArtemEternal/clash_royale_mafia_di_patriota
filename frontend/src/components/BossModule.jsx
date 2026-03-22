@@ -24,9 +24,11 @@ export default function BossModule(){
             <BossPage sound={sound}/> 
                 : 
             <div className={styles.contentContainer}>
-                <Button children={"Продолжить со звуком"} onClick={WithSound}/>
-                <Button children={"Продолжить без звука"} onClick={WithOutSound}/>
-                <GoHomeButton content={"На главную"}/>
+                <div className={styles.divdiv}>
+                    <div className={styles.div1}><Button classNamee="Neon" children={"Продолжить со звуком"} onClick={WithSound}/></div>
+                    <div className={styles.div2}><Button classNamee="Neon" children={"Продолжить без звука"} onClick={WithOutSound}/></div>
+                </div>
+                <div className={styles.div3}><GoHomeButton content={"На главную"}/></div>
             </div>}
     </>
 }

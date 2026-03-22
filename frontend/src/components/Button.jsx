@@ -10,9 +10,12 @@ export default function Button({
         <button 
             style={style}
             onClick={onClick}
-            className={[styles.Button, classNamee].join("")}
+            className={`${styles.Button} ${styles[classNamee]}`}
         >
             {children}
         </button>
     )
-}
+};
+
+
+            {/*className={[styles.Button, classNamee].join("")}*/}
