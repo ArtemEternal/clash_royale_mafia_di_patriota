@@ -49,6 +49,17 @@
 .Button:hover {
   transform: translateY(-2px);
   color: var(--white);
+  background-color: var(--color-accent-90);
+  box-shadow:
+    0 0 10px var(--color-neon),
+    0 0 20px var(--color-neon),
+    0 0 40px var(--color-neon-glow),
+    inset 0 0 15px var(--color-neon-50);
+}
+
+.Button.Neon:hover {
+  transform: translateY(-2px);
+  color: var(--white);
   background-color: var(--color-accent-70);
   box-shadow:
     0 0 10px var(--color-neon),
