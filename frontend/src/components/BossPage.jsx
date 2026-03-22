@@ -56,7 +56,9 @@ export default function BossPage({sound}){
         </div>
         <div className={styles.contentContainer}>
             <h1>Don Patriot.dev</h1>
-            <div className={styles.aboutMeContainer}>
+            
+        </div>
+        <div className={styles.aboutMeContainer}>
                 <a
                     href="https://t.me/lavahound_cr"
                     target="_blank"
@@ -75,6 +77,5 @@ export default function BossPage({sound}){
                     <img srcSet="https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/gmail.png" alt="Gmail"/>
                 </a>
             </div>
-        </div>
     </>
 }
