@@ -1,5 +1,5 @@
-'use client';
-export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+export const revalidate = 0;
 
 import styles from "../styles/RulesPage.module.css";
 //import bg_desktop from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/test_bg.webp";
