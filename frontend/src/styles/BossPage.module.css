@@ -74,7 +74,7 @@
 
 .aboutMeContainer{
   background: none;
-  position: absolute;
+  position: fixed;
   height: 100dvh;
   bottom: 10px;
   width: 100%;
