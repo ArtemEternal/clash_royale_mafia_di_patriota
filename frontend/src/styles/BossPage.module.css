@@ -85,6 +85,10 @@
   justify-content: center;
 }
 
+.aboutMeContainer a{
+  z-index: 9999;
+}
+
 .aboutMeContainer a img{
   height: clamp(20px, 10vw, 50px);
   width: clamp(20px, 10vw, 50px);
