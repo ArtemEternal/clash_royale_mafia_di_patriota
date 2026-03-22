@@ -1,3 +1,5 @@
+'use client';
+
 import styles from "../styles/RulesPage.module.css";
 //import bg_desktop from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/test_bg.webp";
 //import bg_mobile from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/corleone_verticalbg.webp";
