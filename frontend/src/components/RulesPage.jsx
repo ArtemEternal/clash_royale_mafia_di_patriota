@@ -20,16 +20,6 @@ useEffect(()=>{
     }else{
         console.log("Canvas not found, ref is null");
     }
-
-    const meta = document.querySelector('meta[name="theme-color"]');
-
-    if(!meta){
-        meta = document.createElement('meta')
-        meta.setAttribute('name', 'theme-color')
-        document.head.appendChild(meta)
-    };
-
-    meta.setAttribute('content', 'dark');
 },[]);
 
     return<>
