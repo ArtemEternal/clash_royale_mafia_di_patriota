@@ -13,9 +13,10 @@
     0 0 10px var(--color-neon-glow),
     0 0 30px var(--color-neon-50),
     0 0 60px var(--color-neon-20);
-  height: 100vh;
+  height: 100dvh;
   user-select: none;
   text-align: center;
+  flex-direction: column;
   width: 100%;
   -webkit-text-stroke: 2px var(--color-neon-70);
 }
@@ -71,16 +72,13 @@
 .aboutMeContainer{
   background: none;
   position: absolute;
-  height: 100vh;
   bottom: 10px;
-  width: 100vw;
+  width: 100%;
+  bottom: 3rem;
   display: flex;
   flex-direction: row; 
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  padding: 1rem;
-  z-index: 9999;
 }
 
 .aboutMeContainer a img{
