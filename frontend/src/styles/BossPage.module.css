@@ -14,6 +14,7 @@
     0 0 30px var(--color-neon-50),
     0 0 60px var(--color-neon-20);
   height: 100dvh;
+  overflow: hidden;
   user-select: none;
   text-align: center;
   width: 100%;
