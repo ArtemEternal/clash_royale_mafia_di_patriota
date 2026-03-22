@@ -1,21 +1,17 @@
 'use client';
+export const dynamic = 'force-dynamic';
 
 import styles from "../styles/RulesPage.module.css";
 //import bg_desktop from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/test_bg.webp";
 //import bg_mobile from "https://cdn.jsdelivr.net/gh/ArtemEternal/cdn-music/corleone_verticalbg.webp";
 import { RULES } from "./pisanina/textRules.jsx";
 import { canvasLightning } from "../canvas.js";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import GoHomeButton from "./GoHomeButton.jsx";
 
 export default function RulesPage(){
 
 const canvasRef = useRef(null);
-const [stylesLoaded, setStylesLoaded] = useState(false);
-
-useEffect(()=>{
-    setStylesLoaded(true);
-},[]);
 
 useEffect(()=>{
     const canvas = canvasRef.current;
@@ -27,7 +23,7 @@ useEffect(()=>{
     }else{
         console.log("Canvas not found, ref is null");
     }
-},[stylesLoaded]);
+},[]);
 
     return<>
         <div className={styles.contentContainer}>
