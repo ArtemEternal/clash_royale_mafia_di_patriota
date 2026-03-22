@@ -5,6 +5,7 @@
     box-sizing: border-box;
     overflow-y: auto;
     scrollbar-width: none;
+    overflow-y: auto;
 }
 
 .contentContainer::-webkit-scrollbar {
@@ -38,7 +39,8 @@
 .textContainer{
     min-height: 100vh;
     width: 100%;
-    position: absolute;
+    position: relative;
+    z-index: 999;
     z-index: 5;
     display: flex;
     align-items: center;
