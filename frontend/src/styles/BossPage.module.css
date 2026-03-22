@@ -71,7 +71,7 @@
 .aboutMeContainer{
   background: none;
   position: absolute;
-  height: 100dvh;
+  height: 100vh;
   bottom: 10px;
   width: 100vw;
   display: flex;
@@ -80,6 +80,7 @@
   justify-content: center;
   box-sizing: border-box;
   padding: 1rem;
+  z-index: 9999;
 }
 
 .aboutMeContainer a img{
@@ -130,5 +131,12 @@ h1{
 @media(max-width: 350px){
   .contentContainer{
       -webkit-text-stroke: 1px var(--color-neon-70);
+  }
+}
+
+@media(max-width: 100px){
+  .aboutMeContainer{
+    box-sizing: border-box;
+    padding: 0.1rem;
   }
 }
