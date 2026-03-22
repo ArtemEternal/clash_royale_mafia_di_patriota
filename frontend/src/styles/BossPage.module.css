@@ -83,6 +83,7 @@
   flex-direction: row; 
   align-items: flex-end;
   justify-content: center;
+  z-index: 9999;
 }
 
 .aboutMeContainer a{
