@@ -84,7 +84,7 @@
 
 @media(orientation: portrait){
     .textContainer{
-        color: var(--color-text);
+        color: #1b1a18;
     }
 }
 
