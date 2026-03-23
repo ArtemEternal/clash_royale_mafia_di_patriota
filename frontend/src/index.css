@@ -4,6 +4,7 @@
   min-height: 100vh;
   position: relative;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -54,8 +55,10 @@ body {
   touch-action: manipulation;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
     border-color 0.3s ease-in-out;
-  min-height: 100vh;
+  min-height: 100dvh;
   height: 100%;
+  touch-action: pan-y;
+  overflow: hidden;
 }
 
 *,
