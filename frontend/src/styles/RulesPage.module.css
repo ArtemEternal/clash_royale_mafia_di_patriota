@@ -22,7 +22,7 @@
     width: 100%;
     object-fit: cover;
     inset: 0;
-    filter: brightness(10%);
+    filter: brightness(14%);
     z-index: 3;
 }
 
@@ -33,7 +33,7 @@
     width: 100vw;
     z-index: 4;
     pointer-events: none;
-    filter: brightness(17%);
+    filter: brightness(20%);
 }
 
 .textContainer{
@@ -49,9 +49,9 @@
     padding: 10% 3%;
     gap: 10%;
     box-sizing: border-box;
-    color: #3a342d;
+    color: #4b4238;
     flex-direction: column;
-    -webkit-text-stroke: 1px #e6d3a326;
+    -webkit-text-stroke: calc(1px / 2) #e6d3a376;
 }
 
 /*#e6d3a304*/
@@ -65,12 +65,14 @@
 .section h1{
     text-align: center;
     font-weight: 600;
-    -webkit-text-stroke: 1px #e6d3a33a;
+    -webkit-text-stroke: 1px #e6d3a376;
 }
 
 .section h2{
-    -webkit-text-stroke: 1px #e6d3a33a;
+    -webkit-text-stroke: 1px #e6d3a376;
 }
+
+/*#e6d3a33a*/
 
 .rules{
     text-align: center;
